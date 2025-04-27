@@ -21,6 +21,7 @@ let comentariosBack = document.getElementById("comentariosBack");
 let comentarKirby = document.getElementById("comentar1");
 let fecharComentarioKirby = document.getElementById("fechar1");
 let comentariosKirby = document.getElementById("comentarios1");
+let comentarios = document.getElementById("comentarios");
 
 comentarKirby.addEventListener("click", function () {
   comentariosBack.style.display = "block";
