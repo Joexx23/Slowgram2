@@ -1,3 +1,9 @@
+// NÃO MEXER EM NADA DAQUI!
+// PERIGO DE MORTE!
+
+
+// fazer as curtidas funcionar
+
 let curtirKirby = document.getElementById("curtir1");
 let curtidoKirby = document.getElementById("curtido1");
 let curtidasKirby = document.getElementById("curtidas1");
@@ -16,6 +22,9 @@ curtidoKirby.addEventListener("click", () => {
 
   likeKirby = !likeKirby;
 });
+
+
+// fazer os comentarios abrir e fechar
 
 let comentariosBack = document.getElementById("comentariosBack");
 let comentarKirby = document.getElementById("comentar1");
@@ -36,3 +45,4 @@ fecharComentarioKirby.addEventListener("click", function () {
     comentariosBack.style.display = "none";
   }, 300);
 });
+
