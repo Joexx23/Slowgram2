@@ -17,6 +17,7 @@ body {
   box-shadow: 2px 2px 0 #000;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .title-bar {
@@ -157,6 +158,7 @@ body {
   width: 35px;
   height: 35px;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .like-button {
@@ -213,4 +215,58 @@ body {
   width: 24px;
   height: 24px;
   display: block;
+}
+
+.comentariosBack {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+.comentarios {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 70%;
+  bottom: 5px;
+}
+
+.comentarios span {
+  position: absolute;
+  font-size: 2rem;
+  color: red;
+  font-family: 'Press Start 2P', monospace;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.entrar {
+  animation: entrar 0.3s ease-in-out forwards;
+}
+
+.sair {
+  animation: sair 0.3s ease-in-out forwards;
+}
+
+@keyframes entrar {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 70%;
+  }
+}
+
+@keyframes sair {
+  from {
+    height: 70%;
+  }
+
+  to {
+    height: 0%;
+  }
 }
