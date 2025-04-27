@@ -126,7 +126,10 @@ body {
   overflow: hidden;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+  display: flex;
 }
+
+
 .post-image img {
   width: 100%;
   height: 100%;
@@ -217,12 +220,15 @@ body {
   display: block;
 }
 
+
+/* Aqui é a aparencia dos comentarios, edita aqui */
+
 .comentariosBackKirby {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   position: absolute;
-  display: block;
+  display: none;
 }
 
 .comentariosKirby {
@@ -251,6 +257,9 @@ body {
   animation: sair 0.3s ease-in-out forwards;
 }
 
+
+/* Não edita isso daqui */
+
 @keyframes entrar {
   from {
     height: 0%;
@@ -270,6 +279,8 @@ body {
     height: 0%;
   }
 }
+
+/* Aqui pode editar */
 
 .username {
   margin-left: 10px;
