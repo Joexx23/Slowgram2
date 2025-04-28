@@ -223,41 +223,100 @@ body {
 
 /* Aqui é a aparencia dos comentarios, edita aqui */
 
-.comentariosBackKirby {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: none;
+.comentarios .texto {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.comentarios .username {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.comentarios .comment-text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  color: black;
 }
 
 .comentariosKirby {
   position: absolute;
-  background-color: white;
-  width: 100%;
-  height: 70%;
-  bottom: 5px;
+  bottom: 5px;       
+  left: 0;           
+  width: 100%;       
+  height: 70%;       
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;  
 }
 
 .comentariosKirby span {
   position: absolute;
   font-size: 2rem;
-  color: red;
+  color: red; 
   font-family: 'Press Start 2P', monospace;
   top: 5px;
   right: 5px;
   cursor: pointer;
 }
 
-.entrar {
-  animation: entrar 0.3s ease-in-out forwards;
-}
-
-.sair {
-  animation: sair 0.3s ease-in-out forwards;
+.comentariosKirby span:hover {
+  color: rgb(231, 231, 231);  
 }
 
 
+.comentariosKirby::before {
+  content: "Windows 95";
+  display: block;
+  background: navy;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-bottom: 2px solid #030303;
+}
+
+.comentariosKirby span {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'MS Sans Serif', sans-serif;
+}
+
+.comentarios {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: #c0c0c0;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #000;
+}
+
+.comentarios .avatar {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px inset gray;
+  background: silver;
+}
+.comentarios .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Não edita isso daqui */
 
 @keyframes entrar {
@@ -282,28 +341,21 @@ body {
 
 /* Aqui pode editar */
 
-.username {
-  margin-left: 10px;
-}
-
-.comentarios {
-  background-color: #c0c0c0;
-  margin: 5px;
-  height: 10%;
-  margin-top: 10%;
-  border: 3px inset;
-  border-color: white white gray gray;
-  display: flex;
-  
-}
-
-.comentarios .avatar {
-  height: 55px;
-  width: 20%;
-  margin: 0;
-  padding: 0;
-}
-
 .comentarios p {
-  margin-left: 5px;
+  margin: 0;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+
+.likeCommentButton {
+  margin-left: auto;
+  background-color: #C0C0C0;
+  border: 2px outset #fff;
+  padding: 4px 12px;
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+.likeCommentButton:hover {
+  background-color: #A0A0A0;
 }
