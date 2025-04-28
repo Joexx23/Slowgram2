@@ -317,6 +317,15 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.entrar {
+  animation: entrar 0.3s ease-in-out forwards;
+}
+
+.sair {
+  animation: sair 0.3s ease-in-out forwards;
+}
+
 /* Não edita isso daqui */
 
 @keyframes entrar {
